@@ -1,0 +1,60 @@
+.header-app {
+  align-items: center;
+  background: linear-gradient(90deg, #00344b, #00344bbf, #00344b00),
+    url("../assets/admin-small.png");
+  display: flex;
+  flex-direction: row;
+  height: 70px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.header-title {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: italic;
+  padding-left: 30px;
+  margin: 0;
+}
+
+.header-info {
+  align-items: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-right: 30px;
+}
+
+.header-icon {
+  font-size: 30px;
+}
+
+.vertical-border-right {
+  height: 30px;
+  border-right: 1px solid #f6f6f6;
+  margin: 0 12px 0 8px;
+}
+
+.header-user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6px;
+}
+
+.header-username {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1;
+}
+
+.header-function {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.header-user-info p {
+  margin: 0;
+}

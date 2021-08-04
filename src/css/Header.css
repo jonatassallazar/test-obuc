@@ -2,6 +2,8 @@
   align-items: center;
   background: linear-gradient(90deg, #00344b, #00344bbf, #00344b00),
     url("../assets/admin-small.png");
+  background-position: bottom;
+  background-size: cover;
   display: flex;
   flex-direction: row;
   height: 70px;

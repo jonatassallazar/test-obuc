@@ -21,21 +21,50 @@
   flex-direction: column;
   height: 90%;
   margin: auto;
+  max-height: 90%;
+  overflow-y: overlay;
   padding: 16px;
   width: 100%;
 }
 
 .workplaces-content .row {
-  align-items: flex-end;
+  align-items: flex-start;
+  height: 100px;
 }
 
 .workplaces-form {
   width: 70%;
   margin-bottom: 6px;
+  color: #00344b;
+}
+
+.workplaces-form select {
+  box-shadow: #b1b1b17a 0px 0px 3px 1px;
+}
+
+.workplaces-form input {
+  box-shadow: #b1b1b17a 0px 0px 3px 1px;
+}
+
+.workplace-form-button {
+  padding-top: 2rem;
+}
+
+.workplace-form-button button {
+  background-color: white;
+  box-shadow: #b1b1b17a 0px 0px 3px 1px;
+  color: #00344b;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0rem 0.35rem;
 }
 
 .form-select.form-select {
   background-position: right 0.75rem center;
+}
+
+.form-select.is-invalid {
+  background-position: right 0.75rem center, center left 0.35rem !important;
 }
 
 .workplaces-table.workplaces-table {
@@ -52,13 +81,16 @@
 }
 
 .workplaces-table td {
+  background-color: white !important;
   border: 1px solid #d8d8d8;
+  color: #00344b;
   font-size: 14px;
   text-align: center;
 }
 
 .workplace-icon {
   cursor: pointer;
+  padding-right: 4px;
 }
 
 .workplaces-table .form-select {

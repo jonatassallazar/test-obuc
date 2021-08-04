@@ -19,9 +19,19 @@
 
 .sidebar-item {
   background: #00344b;
+  cursor: pointer;
   font-size: 14px;
   list-style: none;
   padding: 5px 0 5px 16px;
   margin: 6px 0;
   width: 100%;
+}
+
+.sidebar-item:hover {
+  background: #0f3c50;
+}
+
+.sidebar-item.active {
+  border-left: 3px solid white;
+  padding-left: 13px;
 }

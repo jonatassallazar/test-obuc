@@ -37,6 +37,10 @@ const WorkplacesTable = ({ item, setWorkplaces, index, workplaces }) => {
     console.log(workplaces);
   };
 
+  const handleCancelWorkplace = () => {
+    setIsEditing(false);
+  };
+
   return (
     <tr>
       {isEditing ? (
@@ -62,23 +66,33 @@ const WorkplacesTable = ({ item, setWorkplaces, index, workplaces }) => {
               onChange={(e) => setWorkplace(e.target.value)}
             />
           </td>
+          <td>
+            <i
+              className="bi bi-check-lg workplace-icon"
+              onClick={() => handleEditWorkplace()}
+            ></i>
+            <i
+              className="bi bi-x-lg workplace-icon"
+              onClick={() => handleCancelWorkplace()}
+            ></i>
+          </td>
         </>
       ) : (
         <>
           <td>{predio}</td>
           <td>{workplace}</td>
+          <td>
+            <i
+              className="bi bi-pencil-fill workplace-icon"
+              onClick={() => handleEditWorkplace()}
+            ></i>
+            <i
+              className="bi bi-trash-fill workplace-icon"
+              onClick={() => handleDeleteWorkplace()}
+            ></i>
+          </td>
         </>
       )}
-      <td>
-        <i
-          className="bi bi-pencil-fill workplace-icon"
-          onClick={() => handleEditWorkplace()}
-        ></i>
-        <i
-          className="bi bi-trash-fill workplace-icon"
-          onClick={() => handleDeleteWorkplace()}
-        ></i>
-      </td>
     </tr>
   );
 };
